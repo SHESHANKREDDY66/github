@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>STUDENT REGISTRATION PAGE</title>
+</head>    
+<body bgcolor="Lightskyblue">
+    <br>
+    <br>
+    <form>
+        <label>First name</label>
+        <input type="text" name="firstname" size="15"/>
+        <br><br>
+        <label>"Middle name" </label>
+        <input type="text" name="middlename" size="15"/>
+        <br>
+        <br><label> Lastname: </label>         
+        <input type="text" name="lastname" size="15"/> <br> <br>  
+          
+        <label>   
+        Course:  
+        </label>   
+        <select>  
+        <option value="Course">Course</option>  
+        <option value="Civil">Civil</option>  
+        <option value="EEE">EEE</option>  
+        <option value="ECE">ECE</option>  
+        <option value="Mech">Mech</option>  
+        <option value="CSE">CSE</option>  
+        </select>  
+          
+        <br>  
+        <br>  
+        <label>   
+        Gender :  
+        </label><br>  
+        <input type="radio" name="male"/> Male <br>  
+        <input type="radio" name="male"/> Female <br>  
+        <input type="radio" name="male"/> Other  <br>  
+        <br>  
+          
+        <label>   
+        Phone :  
+        </label>  
+        <input type="text" name="country code"  value="+91" size="2"/>   
+        <input type="number" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" /> <br> <br>  
+        Address  
+        <br>  
+        <textarea cols="80" rows="5" value="address">  
+        </textarea>  
+        <br> <br>  
+        Email:  
+        <input type="email" id="email" name="email"/> <br>    
+        <br> <br>  
+        Password:  
+        <input type="Password" id="pass" name="pass"> 
+<input type="checkbox" onclick="myFunction()">Show Password
+
+<br>   
+        <br> <br> 
+
+        function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ 
+        Re-type password:  
+        <input type="Password" id="repass" name="repass"> <br> <br>  
+        <input type="button" value="Submit"/>  
+
+        
+    </form>
+
+</body>
+</html>
